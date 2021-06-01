@@ -1,5 +1,3 @@
-@import "utils/variables.scss";
-
 /* compents is made for styling that is resuable so i placed my nav bar styling in here*/
 
 /*styling for the Unorder list for my nav across all the pages*/
@@ -47,7 +45,7 @@ nav
 {
     display: inline-block;
     color: $nav-color;
-    background: $P-color;
+    background: $BG-color;
     padding: 5px;
     text-align: center;
     margin: 10px;
@@ -75,6 +73,7 @@ nav.fixed
     flex-wrap: nowrap;
     background-color: $BG-color;
     justify-content:center;
+    position:fixed;
 }
 
 .flex-container > div 
@@ -85,4 +84,5 @@ nav.fixed
     text-align: center;
     line-height: 75px;
     font-size: 30px;
+    position: fixed;
 }

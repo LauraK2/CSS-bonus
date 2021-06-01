@@ -1,10 +1,8 @@
-/*styling for the body of all my pages that are linked to this style sheet*/
-body {
-  background: whitesmoke;
-  font: 24px;
-  margin: 2px;
-}
-
+/*imports the folders from style so the variables and styling I added in utils and 
+compents are still apllied while making my style sheet more organized */
+/*variables that may apply to multiple styling compents and makes it more organized*/
+/*variables that may apply to multiple styling compents and makes it more organized*/
+/* compents is made for styling that is resuable so i placed my nav bar styling in here*/
 /*styling for the Unorder list for my nav across all the pages*/
 nav ul {
   display: inline;
@@ -44,7 +42,7 @@ nav a:visited {
 nav {
   display: inline-block;
   color: blueviolet;
-  background: #cc8ba7;
+  background: whitesmoke;
   padding: 5px;
   text-align: center;
   margin: 10px;
@@ -64,6 +62,36 @@ nav.fixed {
   padding: 0px;
   margin-top: 6px;
   font-size: 20px;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: whitesmoke;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+}
+
+.flex-container > div {
+  background-color: whitesmoke;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  position: fixed;
+}
+
+/*styling for the body of all my pages that are linked to this style sheet*/
+body {
+  background: whitesmoke;
+  font-size: 24px;
+  margin: 2px;
 }
 
 /*div for my transition to change color*/
@@ -101,13 +129,3 @@ nav.fixed {
     background-color: #91c9ee;
   }
 }
-
-/* Explation for color scheme*/
-/*I went through the article on color psychology and elimatnated certain colors based on the pupose of my website. 
-I pick blue because the color shows stability, calmness and confidence and when talking about a informatative  
-website I want my website to give of the confidence and to show its a reliable source. As for the purple i 
-picked it because its known to express wisdom and when you have a site with information you want to 
-give off the look that you know what your talking about.*/
-/* On the picture on the home page when you hover over you should see my trasition where text fades into the picture */
-/**/
-

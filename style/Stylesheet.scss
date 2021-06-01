@@ -1,14 +1,15 @@
 
 /*imports the folders from style so the variables and styling I added in utils and 
 compents are still apllied while making my style sheet more organized */ 
-@import "utils/variables.scss";
-@import "components/nav.scss";
+/*variables that may apply to multiple styling compents and makes it more organized*/
+@import "utils/var";
+@import "components/nav";
 
 /*styling for the body of all my pages that are linked to this style sheet*/
 body 
 {
     background: $BG-color;
-    font: 24px;
+    font-size: 24px;
     margin: 2px;
 }
 
@@ -35,5 +36,9 @@ body
     from {background-color: $P-color;}
     to {background-color: $background-color;}
 }
+
+
+
+
 
 
