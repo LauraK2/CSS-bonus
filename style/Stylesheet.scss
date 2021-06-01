@@ -1,0 +1,39 @@
+
+/*imports the folders from style so the variables and styling I added in utils and 
+compents are still apllied while making my style sheet more organized */ 
+@import "utils/variables.scss";
+@import "components/nav.scss";
+
+/*styling for the body of all my pages that are linked to this style sheet*/
+body 
+{
+    background: $BG-color;
+    font: 24px;
+    margin: 2px;
+}
+
+/*div for my transition to change color*/ 
+.div1
+{
+    width: 50%;
+    height: 37%;
+    margin: 7px;
+    margin-bottom:2px;
+    border:2px outset $border;
+    background-color: $BG-color;
+    text-align: center;
+    font-size:24px;
+    /*name of the animtion to refernce for the keyframe*/
+    animation-name: Animation;
+    /* time time it take for the colors to change*/
+    animation-duration: 7s;
+}
+
+/*keyframe contains my start(light-blue)-end(purple) point of my animations for the color change based on my color scheme*/
+@keyframes Animation 
+{
+    from {background-color: $P-color;}
+    to {background-color: $background-color;}
+}
+
+

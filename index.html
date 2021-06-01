@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Project</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+        <link rel="stylesheet" type="text/css" href="style/Stylesheet.css">
+
+        <style>
+            /*styling for Title div (Welcome to my website)*/
+            #div 
+            {
+                border: 5px outset#252838;
+                background-color: lightblue;    
+                text-align: center;
+                
+            }
+
+            /* styling for Canada image*/
+            img
+            {
+                float: left; 
+                height: 45%;
+                width: 45%;
+                margin: 7px;
+            }
+
+            /* styling for container for the image and text*/
+            .container 
+            {
+                position: relative;
+                width: 30%;
+            }
+
+            /*styling for image in the fade transition*/
+            #image 
+            {
+                display: block;
+                width: 100%;
+                height: 247px;
+            }
+
+            /*styling for the middle part where you swtich between the image to the text*/
+            .overlay 
+            {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                -webkit-transition: .5s ease;
+                background-color: #008CBA;
+            }
+
+            /*styling for how the transpart the text when hovering*/
+            /*example when I made opacity 0.5 and hovered theimage was still showing*/
+            .container:hover .overlay 
+            {
+                opacity: 1;
+            }
+
+            /* styling for the text inside the trasition*/
+            .text 
+            {
+                color: white;
+                font-size: 24px;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-48%, 200%);
+                -ms-transform: translate(-48%, 200%);
+                transform: translate(-48%, 200%);
+                text-align: center;
+            }
+
+            /*styling for the the overall grid */
+            .grid-container 
+            {
+                display: grid;
+                /*4 rows that placed as auto which sets the cloumns to meet the content and size of page */
+                grid-template-columns: auto auto auto auto auto;
+                grid-gap: 5px;
+                background-color: lightblue;
+                padding: 5px;
+            }
+
+            /* styling for each box in the grid*/
+            .grid-container > div 
+            {
+                background-color: whitesmoke;
+                border: 1px solid black;
+                text-align: center;
+                font-size: 30px;
+            }
+
+        </style> 
+    </head>
+    <body style="background-color: #E6E6FA; color: #252838;">
+        <!-- nav bar -->
+        <!--made class flex-container so the nav bar take the styling for a flexbox which i named flex-contanier-->
+        <nav class="flex-container ">
+            <ul>
+                <li>
+                    <a href="index.html">Home Page</a>
+                </li>
+                <li>
+                    <a href="Atlantic.html"> Atlantic</a>
+                </li>
+                <li>
+                    <a href="Central.html"> Central</a>
+                </li>
+                <li>
+                    <a href="Prairie.html"> Prairie</a>
+                </li>
+                <li>
+                    <a href="West Coast.html"> West Coast</a>
+                </li>
+                <li>
+                    <a href="Northern Territories.html"> Northern Territories</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--space so no content is covered by the navbar-->
+        <br>
+       
+
+        <!--div for title of website -->
+        <div id= "div">
+            <p style = "font-size:34px; margin-top: 15px; margin-bottom: 15px;"> Welcome to Canada</p>
+        </div>
+
+        <!--div for the trasition-->
+        <div class="container">
+            <!--image for the trasition, the the night picture of erath  from space-->
+            <img src="https://policyoptions.irpp.org/wp-content/uploads/sites/2/2020/06/Facebook-Why-Canada-may-become-a-great-global-power-this-century.jpg" alt="pic" id="image">
+            <div class="overlay">
+                <div class="text">Canada is the second largest country in the World </div>
+            </div>
+        </div>
+
+        <!--text for page (facts that are beside the picture connected by a  float) -->
+        <p style= "font-size:22px; margin:7px;"> 
+            <span style="font-weight:bold">Population: </span> Almost 38 million people
+            <br>
+            <span style="font-weight:bold">Capital: </span> Ottawa-1.4 million inhabitants 
+            <br>
+            <span style="font-weight:bold">Official Languages: </span> English, French
+            <br>
+            <span style="font-weight:bold">National Anthem: </span> O Canada!
+            <br>
+            <span style="font-weight:bold">National Colours: </span> Red and white
+            <br>
+            <span style="font-weight:bold">National Symbols: </span> Maple leaf, Red & White flag, Maple tree 
+            <br>
+            <span style="font-weight:bold">National Tree: </span> Maple tree
+            <br>
+            <span style="font-weight:bold">National Animal: </span> Beaver
+            <br>
+            <span style="font-weight:bold">Government: </span> The Prime Minister is Justin Trudeau
+            <br>
+            <span style="font-weight:bold">National Day: </span> July 1st
+        </p>
+
+        <!--text for page (extra info about canada that in under the picture-->
+        <p style= "font-size:22px;"> Canada is a large country in the northern hemisphere. The country belongs to the North American continent. Canada borders the Atlantic Ocean in the east, the Pacific Ocean in the west and the Arctic Ocean in the North. Canada's biggest bay, Hudson Bay, was discovered in 1610. Since the 16th century, both French and English kings have ruled over the country. Canada gained independence from Britain in 1867. Today, Queen Elizabeth II of England is still the head of state and the Queen of Canada. It has ten provinces and three territories covering 9.98 million square kilometres (3.85 million square miles), making it the world's second-largest country by total area.</p>
+    
+        <!--my grid, with a class of grid-contanier because the styling for the grid is named grid container -->
+        <div class="grid-container">
+            <!--first 5 rows on top -->
+            <div>Atlantic</div>
+            <div>Central</div>
+            <div>Prairie</div>  
+            <div>West coast </div>
+            <div>Nothern Territories</div>
+            <!-- 5 rows of the bottom-->
+            <div>Time zone: ADT</div>
+            <div>Time zone: EDT</div>
+            <div>Time zone: CDT & MDT</div>
+            <div>Time zone: PDT</div>
+            <div>Time zone: PDT, MDT, CDT & EDT</div>
+        </div>
+        <br>
+    </body> 
+</html> 
